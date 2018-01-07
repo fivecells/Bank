@@ -3,7 +3,7 @@
 		"http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
 <generatorConfiguration>
 	<!-- 连接mysql驱动包所在位置 -->
-	<classPathEntry location="F:\my tools\apache-maven-3.5.2\repository\mysql\mysql-connector-java\5.1.40\mysql-connector-java-5.1.40.jar" />
+	<classPathEntry location="D:\m\repository\mysql-connector-java-5.0.8-bin.jar" />
 	<context id="db2tables" targetRuntime="MyBatis3">
 		<commentGenerator>
 			<!--是否去除自动生成的注释 true是,false否-->
@@ -11,8 +11,8 @@
 		</commentGenerator>
 		<!-- 数据库连接信息，驱动类、连接地址、用户名、密码 -->
 		<jdbcConnection driverClass="com.mysql.jdbc.Driver"
-			connectionURL="jdbc:mysql://localhost:3306/ttshop" userId="root"
-			password="admin">
+			connectionURL="jdbc:mysql://47.100.100.8:3306/moneybank" userId="root"
+			password="Wujing15.">
 		</jdbcConnection>
 		<!--<jdbcConnection driverClass="oracle.jdbc.OracleDriver"-->
 						<!--connectionURL="jdbc:oracle:thin:@localhost:1521:orcl" userId="scott"-->
@@ -45,17 +45,8 @@
 			<property name="enableSubPackages" value="false" />
 		</javaClientGenerator>
 		<!-- 指定数据库表 -->
-		<table schema="" tableName="tb_content"></table>
-		<table schema="" tableName="tb_content_category"></table>
-		<table schema="" tableName="tb_item"></table>
-		<table schema="" tableName="tb_item_cat"></table>
-		<table schema="" tableName="tb_item_desc"></table>
-		<table schema="" tableName="tb_item_param"></table>
-		<table schema="" tableName="tb_item_param_item"></table>
-		<table schema="" tableName="tb_order"></table>
-		<table schema="" tableName="tb_order_item"></table>
-		<table schema="" tableName="tb_order_shipping"></table>
-		<table schema="" tableName="tb_user"></table>
+		<table schema="" tableName="staffinfo"></table>
+		<table schema="" tableName="userinfo"></table>
 		<!--<table tableName="UserInfo" domainObjectName="UserInfo"-->
 			<!--enableCountByExample="false" enableUpdateByExample="false"-->
 			<!--enableDeleteByExample="false" enableSelectByExample="false"-->
