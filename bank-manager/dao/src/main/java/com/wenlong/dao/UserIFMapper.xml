@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.wenlong.dao.UserIFMapper" >
+  <sql id="userinfo">
+
+  </sql>
+<select id="selectlistUserInfoByPage" resultType="com.wenlong.pojo.po.Userinfo">
+  select * form userinfo order by user_id asc limit #{offset},#{limit}
+</select>
+</mapper>
